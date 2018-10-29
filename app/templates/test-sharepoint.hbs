@@ -1,10 +1,14 @@
-<button {{action "onSelect" model}}> {{"Click me"}} </button>
+<button {{action "onSelect" model.title}}> {{"Click me"}} </button>
 
+<div>
+{{#if isExpanded}}
+  <button {{action 'contract'}}>Contract</button>
+{{else}}
+  <button {{action 'expand'}}>Show More...</button>
+{{/if}}
 
-{{denil-sarkar mode=model onSelect=(action "onSelect")}}
+</div>
 
-
-
-<div> This is a {{model}} </div>
+<div> This is a {{model.title}} </div>
 
 {{outlet}}
