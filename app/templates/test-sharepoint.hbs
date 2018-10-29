@@ -1,0 +1,10 @@
+<button {{action "onSelect" model}}> {{"Click me"}} </button>
+
+
+{{denil-sarkar mode=model onSelect=(action "onSelect")}}
+
+
+
+<div> This is a {{model}} </div>
+
+{{outlet}}
