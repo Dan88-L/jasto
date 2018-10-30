@@ -2,11 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-
     isExpanded: false,
-
-    
-
 
 	actions: {
         onSelect(params){
@@ -24,8 +20,5 @@ export default Ember.Controller.extend({
             this.set('isExpanded', false);
         },
     }
-
-
-
 
 });

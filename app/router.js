@@ -9,6 +9,10 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('testSharepoint');
   this.route('bridge');
+  this.route('densharepoint');
+  this.route('denactionbubbling');
+  this.route('diffroutebubbling');
+  this.route('diffroutebubblinga');
 });
 
 export default Router;
